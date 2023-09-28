@@ -1,0 +1,34 @@
+{
+  "name": "diciotech",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run postcss:watch && ts:watch",
+    "postcss": "postcss src/css/main.css -o public/css/main.css --use cssnano autoprefixer postcss-preset-env",
+    "postcss:watch": "npm run postcss -- -w",
+    "ts": "npx tsc",
+    "ts:watch": "npm run ts -- -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kvnol/diciotech.git"
+  },
+  "engines": {
+    "node": "^16"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kvnol/diciotech/issues"
+  },
+  "homepage": "https://github.com/kvnol/diciotech#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "cssnano": "^6.0.1",
+    "postcss": "^8.4.30",
+    "postcss-cli": "^10.1.0",
+    "postcss-preset-env": "^9.1.4",
+    "typescript": "^5.2.2"
+  }
+}
